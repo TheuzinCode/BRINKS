@@ -1,0 +1,317 @@
+/*fontes externas */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Comfortaa:wght@300..700&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Comfortaa:wght@300..700&family=Coming+Soon&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Coiny&family=Comfortaa:wght@300..700&family=Coming+Soon&family=Oswald:wght@200..700&display=swap');
+
+/*margin do site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variavveis pre definidas */
+:root {
+    --fontitulo: "Young Serif", serif;
+    --fontexto: "Oswald", sans-serif;
+    --fontmenu: "Comfortaa", sans-serif;
+    --tam48: 48px;
+    --tam18: 18px;
+    --tam20: 20px;
+    --tam24: 24px;
+    --tam28: 28px;
+    --tam36: 36px;
+    --cor1: #F5EF41;
+    --cor2: #281933;
+    --cor3: #2e2436;
+    --cor4: #717171;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* corpo do site */
+body{
+    background-color: #FFFEE9;
+}
+
+/* cabeçalho do site */
+header {
+    display: flex;
+    background: linear-gradient(to right, #fffcab, #8A42F5);
+    justify-content: center;
+    align-items: center;
+    height: 122px;
+}
+
+/* nome do site */
+.nomesite {
+    color: var(--cor2);
+    font-family: var(--fontitulo);
+    font-weight: 500;
+    font-style: normal;
+    font-size: var(--tam48);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* tamanho do icone */
+.tamIcone{
+    width: 25px;
+    height: 25px;
+}
+
+/* icone */
+.c {
+    position: absolute;
+    left: 57%;
+    top: 20px;
+}
+
+
+/* icones */
+.carrinho {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    width: 150px;
+    position: absolute;
+    right: 150px;
+    top: 40px;
+}
+
+/* menu */
+.menu {
+    background-color: var(--cor3);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 55px;
+    
+
+
+}
+
+/* colorir menu */
+nav ul li {
+    display: inline;
+    margin: 50px;
+}
+
+/* texto menu */
+.txtmenu {
+    font-family: var(--fontmenu);
+    color: white;
+    font-size: var(--tam18);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+}
+/* BANNER DE NOVIDADES NO COMEÇO */
+div[img]{
+    background-image: url(../IMAGENS/novidades.png);
+    height: 460px;
+}
+/* USADO PARA DEIXAR O TEXTO NO BANNER UM EM BAIXO DO OUTRO */
+.cblock1{
+    display: block;
+    align-content: center;
+    justify-items: center;
+    height: 450px;
+    
+}
+
+/* TEXTO SUPER NO BANNER */
+.super{
+    font-family: "Coming Soon", cursive;
+    font-size: 50px;
+}
+
+/* TEXTO NOVIDADE NO BANNER */
+.novi{
+    font-family: "Coiny", system-ui;
+    font-size: 110px;
+    font-weight: 500;
+    margin-top: -20px;
+}
+/* TEXTO BRINKS NO BANNER */
+.brinks{
+    font-family: var(--fontitulo);
+    font-size: 40px;
+    margin-top: -20px;
+}
+
+
+/* LAYOUT DA IMAGEM DOS BRINQUEDOS*/
+.imagem{
+    margin: 20px;
+    height: 250px;
+    width: 250px;
+}
+
+/* GRID PARA OS BRINQUEDOS FICAREM ALINHADOS*/
+.gp {
+    display: grid;
+    grid-template-columns: 343px 343px 343px 343px;
+    margin-top: 50px;
+    align-items: center;
+    gap: 30px;
+}
+
+/* COR PARA DEIXAR O FUNDO O BRINQUEDO LILAS OU ROXO */
+div[color]{
+    background-color: #F3EEFB;
+    border-radius: 15px;
+}
+
+/* USADO PARA DEIXAR TEXTO DO BRINQUEDO UM EM BAIXO DO OUTRO */
+.cblock{
+    display: block;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+/* NOME DO BRINQUEDO */
+.ttblack{
+    text-align: center;
+    font-family: var(--fontexto);
+    font-weight: 500;
+    margin-bottom: 3px;    
+    font-size: var(--tam28);
+}
+/* TEXTO DO BRINQUEDO SEM DESCONTO*/
+.tt{
+    text-align: center;
+    font-family: var(--fontexto);
+    font-weight: 300;
+    margin-bottom: 4px;
+    font-size: var(--tam18);    
+}
+
+/* COLORIR TEXTO DO BRINQUEDO SEM DESCONTO */
+.desconto {
+    font-family: var(--fontexto);
+    font-size: var(--tam18);
+    text-align: center;
+    color: red;
+    text-decoration: line-through;
+}
+
+/* TEXTO DO BRRINQUEDO COM DESCONTO*/
+.preco{
+    text-align: center;
+    font-family: var(--fontexto);
+    font-weight: 400;
+    margin-bottom: 4px;
+    font-size: var(--tam28); 
+}
+
+/* BOTÃO PARA ADICIONAR AO CARRINHO */
+.botao {
+    font-family: var(--fontexto);
+    font-size: var(--tam24);
+    color: white;
+    height: 45px;
+    width: 293px;
+    background-color: #594F61;
+    border: 2px;
+    border-color: #594F61;
+    border-radius: 7px;
+    border-style: solid;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* LINHA ENTRE DOS PRODUTOS */
+.line{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: var(--cor4);
+    width: 80%;
+    height: 1.5px;
+}
+/* LINHA DO FRETE GRATIS */
+.line3 {
+    margin-top: -7px;
+    background-color: #009A22;
+    width: 290px;
+    height: 3px;
+}
+/* LINHA ROXA*/
+.line4 {
+    margin: 30px;
+    background-color: #8A42F5;
+    width: 670px;
+    height: 3px;
+}
+
+/* TEXTO FRETE */
+.frete {
+    margin-top: 50px;
+    font-family: var(--fontexto);
+    color: #009A22;
+    font-size: var(--tam36);
+    text-align: center;
+    font-weight: 400;
+}
+
+/*imagens reborn*/
+.container02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.container03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 70px;
+}
+
+/* TEXTO MIDIA */
+.txtmidia {
+    font-family: var(--fontexto);
+    color: black;
+    font-size: var(--tam36);
+    font-weight: bold;
+}
+
+/* REDES SOCIAIS */
+.rds {
+    width: 50px;
+    height: 50px;
+}
+
+/* texto do rodapé */
+.div1 {
+    display: flex;
+    color: white;
+    font-family: var(--fontexto);
+    font-size: 23px;
+    height: 150px;
+    width: 150px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+/* rodapé */
+footer {
+    height: 355px;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    background-color: #2E2436;
+}

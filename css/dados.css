@@ -1,0 +1,399 @@
+/*fontes externas */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Coiny&family=Comfortaa:wght@300..700&family=Coming+Soon&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+/*margin do site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variavveis pre definidas */
+:root {
+    --fontitulo: "Young Serif", serif;
+    --fontexto: "Oswald", sans-serif;
+    --fontpd: "Inter", sans-serif;
+    --tam48: 48px;
+    --tam16: 16px;
+    --tam18: 18px;
+    --tam20: 20px;
+    --tam28: 28px;
+    --tam36: 36px;
+    --tam24: 24px;
+    --cor1: #F5EF41;
+    --cor2: #281933;
+    --cor3: #2e2436;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+  
+}
+
+.container4 {
+    display: flex;
+    text-align: left;
+}
+
+
+/* corpo do site */
+body {
+    background-color: #FFFEE9;
+}
+
+/* cabeçalho do site */
+header {
+    display: flex;
+    background: linear-gradient(to right, #fffcab, #8A42F5);
+    justify-content: center;
+    align-items: center;
+    height: 122px;
+}
+
+/* nome do site */
+.nomesite {
+    color: var(--cor2);
+    font-family: var(--fontitulo);
+    font-weight: 500;
+    font-style: normal;
+    font-size: var(--tam48);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+/* tamanho do icone */
+.tamIcone {
+    width: 25px;
+    height: 25px;
+}
+
+/* LOGO C DO LADO DO NOME */
+.c {
+    position: absolute;
+    left: 57%;
+    top: 20px;
+}
+
+
+/* ICONES DE LOGIN, SACOLA E SINO */
+.carrinho {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    width: 150px;
+    position: absolute;
+    right: 150px;
+    top: 40px;
+}
+
+/* MENU */
+.menu {
+    background-color: var(--cor3);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 55px;
+
+
+
+}
+
+/* colorir menu */
+nav ul li {
+    display: inline;
+    margin: 50px;
+}
+
+/* texto menu */
+.txtmenu {
+    font-family: var(--fontmenu);
+    color: white;
+    font-size: var(--tam18);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+.ola{
+    align-content: center;
+    height: 150px;
+    margin-left: 370px;
+    font-size: var(--tam24);
+    font-family: var(--fontpd);
+    position: static;
+}
+
+.dadosP{
+    display:flex;
+    justify-content: center;
+    font-family: var(--fontexto);
+    font-size: var(--tam36);
+    margin-left: -520px;
+    margin-bottom: 15px;
+}
+
+
+
+/* BOTÃO QUE ESTA SELECIONADA EM ROXO */
+.botao {
+    align-items: center;
+    display: flex;
+    height: 70px;
+    width: 250px;
+    background-color: #b26aeb;
+    text-decoration: none;
+    color: white;
+    font-family: var(--fontpd);
+    font-size: var(--tam20);
+    border-radius: 15px;
+    position: relative;
+}
+
+/* SETINHA DO BOTÃO*/
+.botao::after {
+    content: '';
+    position: absolute;
+    left: 240px;
+    top: 50%;
+    transform: translatey(-50%);
+    border-left: 35px solid #b26aeb;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-radius: 0px 100px 0px 0px;
+
+}
+
+/* BOTÃO NÃO SELECIONADO */
+.botao1 {
+
+    align-items: center;
+    display: flex;
+    height: 70px;
+    width: 250px;
+    color: black;
+    font-family: var(--fontpd);
+    font-size: var(--tam20);
+    text-decoration: none;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 15px;
+
+}
+
+/* ICONES DOS BOTÃO POR EXEMPLO PEDIDO, CARTÃO E DADOS PESSOAIS */
+.icone{
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+/* PARA DEIXAR AS OPÇÕES UMA EM BAIXO DAS OUTRAS */
+.displayblock {
+    display: block;
+}
+
+/* BLOCO DE OPÇÕES */
+.bloco {
+    margin-top: 20px;   
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* CAMPO AONDE VÃO FICAR AS INFORMAÇÕES DE PEDIDOS, DADOS PESSOAIS E CARTÕES */
+.campoinfo{
+    align-content: center;
+    text-align: center;
+    margin-left: 30px;
+    width: 1100px;
+    height: 650px;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 15px;
+}
+
+
+/* CAMPO NOME E SOBRENOME*/
+.ns{
+    width: 400px;
+    margin-left: 100px;
+    font-family: var(--fontpd);
+    font-size: var(--tam20);
+}
+
+.email{
+    margin-top: 100px;
+    margin-left: 100px;
+    font-family: var(--fontpd);
+    font-size: var(--tam20);
+    
+}
+
+.insert{
+    margin-left: 95px;
+    border: 2px solid #939292;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 400px;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+.insert2{
+    margin-left: 95px;
+    border: 2px solid #939292;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 900px;
+    height: 45px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.editar_botao{
+    margin-top: 60px;
+    margin-left: 100px;
+    font-family: var(--fontexto);
+    font-size: var(--tam24);
+    color: white;
+    background-color: #7a60a0;
+    width: 200px;
+    height: 50px;
+    border-radius: 11px;
+    border-color:  #7a60a0;;
+    border: 0px;
+    cursor: pointer;
+    
+}
+
+/* linha do experimente */
+.line2 {
+    background-color: #8A42F5;
+    width: 233px;
+    margin-top: 20px;
+    height: 5px;
+}
+
+/* texto experimente */
+.txtexp {
+    font-family: var(--fontexto);
+    font-size: 32px;
+    margin-left: 70px;
+    margin-right: 70px;
+    gap: 20px;
+}
+
+/* DEIXAR CENTRALIZADO O CONTINUE COMPRANDO */
+.container03 {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+
+
+/* BRINQUEDO EM BAICO DO CONTINUE COMPRANDO */
+.container2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+/* GRIP PARA OS BRINQUEDOS FICAREM ALINHADOS */
+.gp {
+
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    margin-top: 50px;
+    align-items: center;
+    gap: 30px;
+}
+
+/* COLOCAR AS LEGENDAS UMA EM BAIXO DAS OUTRAS */
+.cblock{
+    display: block;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+/* NOME DO BRINQUEDO */
+.ttblack{
+    text-align: center;
+    font-family: var(--fontexto);
+    font-weight: 500;
+    margin-bottom: 3px;    
+    font-size: var(--tam20);
+}
+
+/* TEXTO DE PRECO SEM DESCONTO */
+.tt{
+    text-align: center;
+    font-family: var(--fontexto);
+    font-weight: 300;
+    margin-bottom: 4px;
+    font-size: var(--tam14);    
+}
+
+/* COLORIR TEXTO DE PRECO SEM DESCONTO */
+.desconto {
+    font-family: var(--fontexto);
+    font-size: var(--tam14);
+    text-align: center;
+    color: red;
+    text-decoration: line-through;
+}
+
+/* TEXTO PRECO COM DESCONTO */
+.preco{
+    text-align: center;
+    font-family: var(--fontexto);
+    font-weight: 400;
+    margin-bottom: 4px;
+    font-size: var(--tam28); 
+}
+
+.nada{
+    font-family: var(--fontpd);
+    font-size: var(--tam36);
+    margin: 50px;
+}
+
+
+
+
+
+/* texto do rodapé */
+.div1 {
+    display: flex;
+    color: white;
+    font-family: var(--fontexto);
+    font-size: 23px;
+    gap: 20px;
+    height: 150px;
+    width: 150px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+/* rodapé */
+footer {
+    margin-top: 150px;
+    height: 355px;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    background-color: #2E2436;
+}
